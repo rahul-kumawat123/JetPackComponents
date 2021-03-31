@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/et_employeeName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Name"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"/>
+
+    <EditText
+        android:id="@+id/et_employeeAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Address"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"/>
+
+    <EditText
+        android:id="@+id/et_employeeContact"
+        android:layout_width="match_parent"
+        android:hint="Enter Contact"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp" />
+
+    <Button
+        android:id="@+id/add_data_btn"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="@string/add_data"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        />
+
+    <Button
+        android:id="@+id/cancel_data_btn"
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>

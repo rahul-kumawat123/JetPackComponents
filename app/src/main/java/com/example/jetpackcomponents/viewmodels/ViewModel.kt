@@ -1,4 +1,4 @@
-package com.example.jetpackcomponents
+package com.example.jetpackcomponents.viewmodels
 
 import androidx.lifecycle.ViewModel
 
