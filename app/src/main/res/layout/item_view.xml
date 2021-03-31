@@ -14,7 +14,7 @@
 
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="244dp"
+            android:layout_height="@dimen/cardview_height"
             app:cardElevation="10dp"
             android:layout_margin="5dp"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -30,8 +30,8 @@
 
                 <TextView
                     android:id="@+id/employeeName"
-                    android:layout_width="340dp"
-                    android:layout_height="49dp"
+                    android:layout_width="@dimen/employeeName_tv_width"
+                    android:layout_height="@dimen/employeeName_tv_height"
                     android:textSize="20sp"
                     android:text="@{employee.name}"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +43,8 @@
 
                 <TextView
                     android:id="@+id/employeeAddress"
-                    android:layout_width="341dp"
-                    android:layout_height="51dp"
+                    android:layout_width="@dimen/employeeAddress_tv_width"
+                    android:layout_height="@dimen/employeeAddress_tv_height"
                     android:textSize="20sp"
                     android:text="@{employee.address}"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -56,10 +56,10 @@
 
                 <TextView
                     android:id="@+id/employeeContact"
-                    android:layout_width="341dp"
+                    android:layout_width="@dimen/employeeContact_tv_width"
                     android:textSize="20sp"
                     android:text="@{employee.contactNo}"
-                    android:layout_height="49dp"
+                    android:layout_height="@dimen/employeeContact_tv_height"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"

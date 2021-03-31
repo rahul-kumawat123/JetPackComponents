@@ -21,8 +21,8 @@
 
     <Button
         android:id="@+id/liveDataDemoBtn"
-        android:layout_width="292dp"
-        android:layout_height="85dp"
+        android:layout_width="@dimen/liveDataBtn_width"
+        android:layout_height="@dimen/liveDataBtn_height"
         android:text="@string/livedata_demo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

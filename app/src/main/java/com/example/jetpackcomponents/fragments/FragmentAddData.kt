@@ -32,14 +32,7 @@ class FragmentAddData: Fragment() {
 
         add_data_btn.setOnClickListener {
 
-            val application = activity!!.application
-            val employeeViewModel = ViewModelProvider(this).get(EmployeeViewModel(application)::class.java)
-            employeeViewModel.addEmployeeDetails(Employee(
-                emp_id = null,
-                name = et_employeeName.text.toString(),
-                address = et_employeeAddress.text.toString(),
-                contactNo = et_employeeContact.text.toString()
-            ))
+            addDataInRoomDb()
             context?.showToast("Data Added Successfully")
             fragmentManager?.popBackStack()
         }
@@ -47,6 +40,17 @@ class FragmentAddData: Fragment() {
         cancel_data_btn.setOnClickListener {
             fragmentManager?.popBackStack()
         }
+    }
+
+    private fun addDataInRoomDb() {
+        val application = activity!!.application
+        val employeeViewModel = ViewModelProvider(this,ViewModelProvider.AndroidViewModelFactory.getInstance(application)).get(EmployeeViewModel(application)::class.java)
+        employeeViewModel.addEmployeeDetails(Employee(
+                emp_id = null,
+                name = et_employeeName.text.toString(),
+                address = et_employeeAddress.text.toString(),
+                contactNo = et_employeeContact.text.toString()
+        ))
     }
 
 }

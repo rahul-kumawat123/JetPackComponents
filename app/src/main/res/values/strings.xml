@@ -4,4 +4,7 @@
     <string name="add_data">Add Data</string>
     <string name="cancel">Cancel</string>
     <string name="livedata_demo">LiveData Demo</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_address">Enter Address</string>
+    <string name="enter_contact">Enter Contact</string>
 </resources>

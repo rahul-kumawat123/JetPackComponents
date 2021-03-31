@@ -10,7 +10,7 @@
         android:id="@+id/et_employeeName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Name"
+        android:hint="@string/enter_name"
         android:textSize="20sp"
         android:layout_marginTop="50dp"/>
 
@@ -18,14 +18,14 @@
         android:id="@+id/et_employeeAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Address"
+        android:hint="@string/enter_address"
         android:textSize="20sp"
         android:layout_marginTop="20dp"/>
 
     <EditText
         android:id="@+id/et_employeeContact"
         android:layout_width="match_parent"
-        android:hint="Enter Contact"
+        android:hint="@string/enter_contact"
         android:textSize="20sp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp" />

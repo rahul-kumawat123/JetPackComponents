@@ -1,5 +1,6 @@
 package com.example.jetpackcomponents.viewmodels
 
+import android.annotation.SuppressLint
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
@@ -10,13 +11,18 @@ import java.util.concurrent.Executors
 
 class EmployeeViewModel(application: Application): AndroidViewModel(application) {
 
+    @SuppressLint("StaticFieldLeak")
     private val context =  getApplication<Application>().applicationContext
-    var allEmployees : LiveData<List<Employee>> = MutableLiveData()
+    var allEmployees : LiveData<List<Employee>>
     private val roomDatabaseBuilder = RoomDatabaseBuilder.getInstance(context)
 
 
     init{
         allEmployees = roomDatabaseBuilder.employeeDao().getAllEmployees()
+        Executors.newSingleThreadExecutor().execute {
+
+        }
+
     }
 
     fun addEmployeeDetails(employee: Employee){

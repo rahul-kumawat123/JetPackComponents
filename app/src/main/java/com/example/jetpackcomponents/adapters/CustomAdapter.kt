@@ -10,7 +10,7 @@ import com.example.jetpackcomponents.Employee
 import com.example.jetpackcomponents.R
 import com.example.jetpackcomponents.databinding.ItemViewBinding
 
-class CustomAdapter(val context: Context?, val employeeDataSet:ArrayList<Employee>): RecyclerView.Adapter<CustomAdapter.MyViewHolder>() {
+class CustomAdapter(private val context: Context?,private val employeeDataSet:ArrayList<Employee>): RecyclerView.Adapter<CustomAdapter.MyViewHolder>() {
 
 
     class MyViewHolder(binding: ItemViewBinding): RecyclerView.ViewHolder(binding.root){
@@ -22,7 +22,8 @@ class CustomAdapter(val context: Context?, val employeeDataSet:ArrayList<Employe
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
 
-        val binding = DataBindingUtil.inflate<ItemViewBinding>(LayoutInflater.from(parent.context),R.layout.item_view,parent,false)
+        val inflater = LayoutInflater.from(parent.context)
+        val binding = DataBindingUtil.inflate<ItemViewBinding>(inflater,R.layout.item_view, parent,false)
         return MyViewHolder(binding)
     }
 
@@ -36,7 +37,5 @@ class CustomAdapter(val context: Context?, val employeeDataSet:ArrayList<Employe
         holder.empContactTv.text = empContact
     }
 
-    override fun getItemCount(): Int {
-        return employeeDataSet.size
-    }
+    override fun getItemCount(): Int = employeeDataSet.size
 }

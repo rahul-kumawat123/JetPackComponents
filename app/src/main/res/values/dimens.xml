@@ -2,4 +2,13 @@
 <resources>
     <dimen name="btn_width">236dp</dimen>
     <dimen name="btn_height">77dp</dimen>
+    <dimen name="liveDataBtn_width">292dp</dimen>
+    <dimen name="liveDataBtn_height">85dp</dimen>
+    <dimen name="cardview_height">244dp</dimen>
+    <dimen name="employeeName_tv_width">340dp</dimen>
+    <dimen name="employeeName_tv_height">49dp</dimen>
+    <dimen name="employeeAddress_tv_width">341dp</dimen>
+    <dimen name="employeeAddress_tv_height">51dp</dimen>
+    <dimen name="employeeContact_tv_width">341dp</dimen>
+    <dimen name="employeeContact_tv_height">49dp</dimen>
 </resources>

@@ -12,11 +12,11 @@ data class Employee(
     var emp_id: Int ?,
 
     @ColumnInfo(name = "Employee_Name")
-    var name: String?= null,
+    var name: String?,
 
     @ColumnInfo(name = "Employee_Address")
-    var address: String?= null,
+    var address: String?,
 
     @ColumnInfo(name = "Employee_ContactNo")
-    var contactNo: String? = null
+    var contactNo: String?
 )
